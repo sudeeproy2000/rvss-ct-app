@@ -8,8 +8,6 @@ import {
   StyleSheet,
   Button,
 } from "react-native";
-//import { launchCamera } from "react-native-image-picker";
-import { RNCamera } from "react-native-camera";
 
 const data = [
   {
@@ -143,25 +141,6 @@ const NestedFlatList = () => {
     );
   };
 
-  const takePhoto = (itemId) => {
-    const options = {
-      mediaType: "photo",
-      quality: 1,
-      cameraType: "back",
-    };
-
-    launchCamera(options, (response) => {
-      if (response.didCancel) {
-        console.log("User cancelled image picker");
-      } else if (response.error) {
-        console.log("ImagePicker Error: ", response.error);
-      } else {
-        // Handle the photo response here, e.g., save the URI to state
-        console.log("Photo URI: ", response.uri);
-      }
-    });
-  };
-
   const renderItem = ({ item }) => (
     <View style={styles.container}>
       <View style={{ padding: 1 }}>
@@ -268,7 +247,6 @@ const NestedFlatList = () => {
                     justifyContent: "center",
                     alignItems: "center",
                   }}
-                  onPress={() => takePhoto(item.index)}
                 >
                   <Image
                     source={require("./././../assets/image/pp.png")}
@@ -288,8 +266,7 @@ const NestedFlatList = () => {
                   <Text
                     style={{ fontSize: 10, fontWeight: "bold", paddingTop: 5 }}
                   >
-                    Name:{" "}
-                    <Text style={{ color: "blue" }}>{item.student.name}</Text>
+                    Name: <Text style={{ color: "blue" }}>Student Name</Text>
                   </Text>
                   <View
                     style={{
@@ -307,9 +284,7 @@ const NestedFlatList = () => {
                   </View>
                   <Text style={{ fontSize: 8 }}>
                     Father's Name:{" "}
-                    <Text style={{ color: "blue" }}>
-                      {item.student.father_name}
-                    </Text>
+                    <Text style={{ color: "blue" }}>Animesh Sarkar</Text>
                   </Text>
                   <View
                     style={{
@@ -320,7 +295,7 @@ const NestedFlatList = () => {
                   >
                     <Text style={{ fontSize: 8 }}>
                       Date of Birth:{" "}
-                      <Text style={{ color: "blue" }}>{item.student.dob}</Text>
+                      <Text style={{ color: "blue" }}>10/10/2010</Text>
                     </Text>
                     <Text style={{ fontSize: 8 }}>
                       Blood Group:<Text style={{ color: "blue" }}>o+</Text>
@@ -328,9 +303,7 @@ const NestedFlatList = () => {
                   </View>
                   <Text style={{ fontSize: 8 }}>
                     Contact No:
-                    <Text style={{ color: "blue" }}>
-                      {item.student.contact_no}
-                    </Text>
+                    <Text style={{ color: "blue" }}>9123456789</Text>
                   </Text>
                   <Text style={{ fontSize: 8 }}>
                     Student ID UBI:
@@ -339,7 +312,7 @@ const NestedFlatList = () => {
                   <Text style={{ fontSize: 8 }}>
                     Address:{" "}
                     <Text style={{ color: "blue" }}>
-                      {item.student.address}
+                      ABC Sarani, Salt Lake, Kolkata - 700034
                     </Text>
                   </Text>
                 </View>

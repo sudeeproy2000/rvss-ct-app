@@ -18,231 +18,23 @@ export default function Test() {
         {/*Table Header*/}
         <View style={styles.table_head}>
           {/*One Single Row*/}
-          <View style={{ width: "28%" }}>
+          <View style={{ width: "25%" }}>
             <Text style={styles.text_header}>Student ID</Text>
           </View>
 
-          <View style={{ width: "39%" }}>
+          <View style={{ width: "30%" }}>
             <Text style={styles.text_header}>Student Name</Text>
           </View>
 
-          <View style={{ width: "28%" }}>
-            <Text style={styles.text_header}>Attendance</Text>
+          <View style={{ width: "20%" }}>
+            <Text style={styles.text_header}>Present</Text>
+          </View>
+
+          <View style={{ width: "20%" }}>
+            <Text style={styles.text_header}>Absent</Text>
           </View>
         </View>
 
-        {/*data of all students*/}
-        <View style={styles.table_body}>
-          {/*One Single Row*/}
-          <View style={{ width: "30%" }}>
-            <Text style={styles.text_data}>12345678</Text>
-          </View>
-
-          <View style={{ width: "40%" }}>
-            <Text style={styles.text_data}>Sudeep Roy</Text>
-          </View>
-
-          {["present", "absent"].map((pornot) => (
-            <View key={pornot} style={styles.attendance}>
-              <TouchableOpacity
-                style={styles.outer}
-                onPress={() => setAttendance(pornot)}
-              >
-                {attendance == pornot && <View style={styles.inner}></View>}
-              </TouchableOpacity>
-            </View>
-          ))}
-        </View>
-
-        <View style={styles.table_body}>
-          {/*One Single Row*/}
-          <View style={{ width: "30%" }}>
-            <Text style={styles.text_data}>12345678</Text>
-          </View>
-
-          <View style={{ width: "40%" }}>
-            <Text style={styles.text_data}>Sudeep Roy</Text>
-          </View>
-
-          {["present", "absent"].map((pornot) => (
-            <View key={pornot} style={styles.attendance}>
-              <TouchableOpacity
-                style={styles.outer}
-                onPress={() => setAttendance(pornot)}
-              >
-                {attendance == pornot && <View style={styles.inner}></View>}
-              </TouchableOpacity>
-            </View>
-          ))}
-        </View>
-        <View style={styles.table_body}>
-          {/*One Single Row*/}
-          <View style={{ width: "30%" }}>
-            <Text style={styles.text_data}>12345678</Text>
-          </View>
-
-          <View style={{ width: "40%" }}>
-            <Text style={styles.text_data}>Sudeep Roy</Text>
-          </View>
-
-          {["present", "absent"].map((pornot) => (
-            <View key={pornot} style={styles.attendance}>
-              <TouchableOpacity
-                style={styles.outer}
-                onPress={() => setAttendance(pornot)}
-              >
-                {attendance == pornot && <View style={styles.inner}></View>}
-              </TouchableOpacity>
-            </View>
-          ))}
-        </View>
-        <View style={styles.table_body}>
-          {/*One Single Row*/}
-          <View style={{ width: "30%" }}>
-            <Text style={styles.text_data}>12345678</Text>
-          </View>
-
-          <View style={{ width: "40%" }}>
-            <Text style={styles.text_data}>Sudeep Roy</Text>
-          </View>
-
-          {["present", "absent"].map((pornot) => (
-            <View key={pornot} style={styles.attendance}>
-              <TouchableOpacity
-                style={styles.outer}
-                onPress={() => setAttendance(pornot)}
-              >
-                {attendance == pornot && <View style={styles.inner}></View>}
-              </TouchableOpacity>
-            </View>
-          ))}
-        </View>
-        <View style={styles.table_body}>
-          {/*One Single Row*/}
-          <View style={{ width: "30%" }}>
-            <Text style={styles.text_data}>12345678</Text>
-          </View>
-
-          <View style={{ width: "40%" }}>
-            <Text style={styles.text_data}>Sudeep Roy</Text>
-          </View>
-
-          {["present", "absent"].map((pornot) => (
-            <View key={pornot} style={styles.attendance}>
-              <TouchableOpacity
-                style={styles.outer}
-                onPress={() => setAttendance(pornot)}
-              >
-                {attendance == pornot && <View style={styles.inner}></View>}
-              </TouchableOpacity>
-            </View>
-          ))}
-        </View>
-        <View style={styles.table_body}>
-          {/*One Single Row*/}
-          <View style={{ width: "30%" }}>
-            <Text style={styles.text_data}>12345678</Text>
-          </View>
-
-          <View style={{ width: "40%" }}>
-            <Text style={styles.text_data}>Sudeep Roy</Text>
-          </View>
-
-          {["present", "absent"].map((pornot) => (
-            <View key={pornot} style={styles.attendance}>
-              <TouchableOpacity
-                style={styles.outer}
-                onPress={() => setAttendance(pornot)}
-              >
-                {attendance == pornot && <View style={styles.inner}></View>}
-              </TouchableOpacity>
-            </View>
-          ))}
-        </View>
-        <View style={styles.table_body}>
-          {/*One Single Row*/}
-          <View style={{ width: "30%" }}>
-            <Text style={styles.text_data}>12345678</Text>
-          </View>
-
-          <View style={{ width: "40%" }}>
-            <Text style={styles.text_data}>Sudeep Roy</Text>
-          </View>
-
-          {["present", "absent"].map((pornot) => (
-            <View key={pornot} style={styles.attendance}>
-              <TouchableOpacity
-                style={styles.outer}
-                onPress={() => setAttendance(pornot)}
-              >
-                {attendance == pornot && <View style={styles.inner}></View>}
-              </TouchableOpacity>
-            </View>
-          ))}
-        </View>
-        <View style={styles.table_body}>
-          {/*One Single Row*/}
-          <View style={{ width: "30%" }}>
-            <Text style={styles.text_data}>12345678</Text>
-          </View>
-
-          <View style={{ width: "40%" }}>
-            <Text style={styles.text_data}>Sudeep Roy</Text>
-          </View>
-
-          {["present", "absent"].map((pornot) => (
-            <View key={pornot} style={styles.attendance}>
-              <TouchableOpacity
-                style={styles.outer}
-                onPress={() => setAttendance(pornot)}
-              >
-                {attendance == pornot && <View style={styles.inner}></View>}
-              </TouchableOpacity>
-            </View>
-          ))}
-        </View>
-        <View style={styles.table_body}>
-          {/*One Single Row*/}
-          <View style={{ width: "30%" }}>
-            <Text style={styles.text_data}>12345678</Text>
-          </View>
-
-          <View style={{ width: "40%" }}>
-            <Text style={styles.text_data}>Sudeep Roy</Text>
-          </View>
-
-          {["present", "absent"].map((pornot) => (
-            <View key={pornot} style={styles.attendance}>
-              <TouchableOpacity
-                style={styles.outer}
-                onPress={() => setAttendance(pornot)}
-              >
-                {attendance == pornot && <View style={styles.inner}></View>}
-              </TouchableOpacity>
-            </View>
-          ))}
-        </View>
-        <View style={styles.table_body}>
-          {/*One Single Row*/}
-          <View style={{ width: "30%" }}>
-            <Text style={styles.text_data}>12345678</Text>
-          </View>
-
-          <View style={{ width: "40%" }}>
-            <Text style={styles.text_data}>Sudeep Roy</Text>
-          </View>
-
-          {["present", "absent"].map((pornot) => (
-            <View key={pornot} style={styles.attendance}>
-              <TouchableOpacity
-                style={styles.outer}
-                onPress={() => setAttendance(pornot)}
-              >
-                {attendance == pornot && <View style={styles.inner}></View>}
-              </TouchableOpacity>
-            </View>
-          ))}
-        </View>
         <View style={styles.table_body}>
           {/*One Single Row*/}
           <View style={{ width: "30%" }}>

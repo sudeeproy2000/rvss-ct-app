@@ -14,7 +14,7 @@ const ClassTeacherProfile = () => {
         style={styles.profileImage}
       />
       <View style={styles.profileInfo}>
-        <Text style={styles.name}>John Doe</Text>
+        <Text style={styles.name}>Tarun Kumar</Text>
         <Text style={styles.email}>classteacher@kvsaltlake.com</Text>
         <Text style={styles.phoneNumber}>9123456789</Text>
       </View>
