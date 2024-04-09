@@ -56,7 +56,7 @@ export default function App() {
             }}
           />
           <Tab.Screen
-            name="Portfolio"
+            name="Attendance"
             component={Attendance}
             options={{
               tabBarIcon: ({ focused }) => {
@@ -101,7 +101,7 @@ export default function App() {
             }}
           />
           <Tab.Screen
-            name="Prices"
+            name="AddStudent"
             component={AddStudent}
             options={{
               tabBarIcon: ({ focused }) => {
@@ -123,7 +123,7 @@ export default function App() {
             }}
           />
           <Tab.Screen
-            name="Settings"
+            name="Profile"
             component={ClassTeacherProfile}
             options={{
               tabBarIcon: ({ focused }) => {
